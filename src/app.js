@@ -13,3 +13,6 @@ form.addEventListener('submit', (event) => {
   document.querySelector('#resultado').textContent = 'Simulación completada. No se ha creado una reserva real ni se han guardado datos.';
 });
 fecha.addEventListener('input', () => fecha.setCustomValidity(''));
+form.addEventListener('input', () => {
+  document.querySelector('#resultado').textContent = 'La simulación no envía ni almacena información.';
+});
