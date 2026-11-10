@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserva de horas | Centro Salud Horizonte</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="/">Salud Horizonte<span>Centro médico · Caso académico ficticio</span></a><span class="badge">Demostración local</span></header>
+  <main>
+    <section class="intro"><p class="eyebrow">ATENCIÓN AMBULATORIA</p><h1>Tu próxima consulta empieza aquí</h1><p>Simula una reserva de atención médica en pocos pasos. Usa únicamente datos ficticios.</p><div class="info"><h2>Información de atención</h2><p>Lunes a viernes · 09:00 a 18:00</p><p>Medicina general y especialidades</p><p>Centro ficticio para la evaluación de DevOps. Este sitio no ofrece atención clínica.</p></div><p class="status">Página de demostración cargada</p><p class="small">Este indicador confirma la carga de la página; el estado del contenedor se comprueba con Docker.</p></section>
+    <section class="card" aria-labelledby="form-title"><h2 id="form-title">Simular una reserva</h2><p>No ingreses RUT, correo, teléfono ni antecedentes médicos reales.</p>
+      <form id="reserva" autocomplete="off">
+        <label for="alias">Alias de prueba</label><input id="alias" required maxlength="40" placeholder="Paciente de prueba">
+        <label for="especialidad">Especialidad</label><select id="especialidad" required><option value="">Selecciona una opción</option><option>Medicina general</option><option>Dermatología</option><option>Pediatría</option></select>
+        <div class="row"><div><label for="fecha">Fecha</label><input id="fecha" type="date" required></div><div><label for="hora">Hora</label><select id="hora" required><option value="">Selecciona</option><option>09:00</option><option>11:00</option><option>15:00</option><option>17:00</option></select></div></div>
+        <button type="submit">Simular reserva</button><p id="resultado" role="status" aria-live="polite">La simulación no envía ni almacena información.</p>
+      </form>
+    </section>
+  </main><footer>Proyecto académico DevOps · Aplicación estática con Nginx y Docker · Sin base de datos</footer>
+</body>
+</html>
